@@ -1,5 +1,5 @@
 # Galaxy-Fold-Product-Page
-This is one of the projects required by FreeCodeCamp in order to earn a certificate in Responsive Web Design.
+this is one of the projects required by freecodecamp in order to earn a certificate in responsive web design. the full description of the requirements of the project is as follows:
 
 Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
 
