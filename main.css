@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+
+* {
+  margin: 0;
+  color: white;
+  padding: 0;
+  font-family: "Bree Serif";
+}
+
+/* beginning of home section */
+
+#home {
+  background-image: url("https://i.imgur.com/klFdK87.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+}
+
+#header {
+  grid-row: 1/2;
+}
+
+#nav-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding-top: 0.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: hsla(0, 0%, 0%, 0.795);
+}
+
+#header-img {
+  max-width: 100%;
+  color: hsl(0, 0%, 0%);
+}
+
+#nav-bar span {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 90%);
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 0rem 0.3rem;
+}
+
+#form {
+  grid-row: 2/3;
+  justify-self: center;
+  margin-top: 2rem;
+}
+
+#email-label {
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+}
+
+#email {
+  display: block;
+  margin: 0.8rem auto 0.9rem auto;
+  padding: 0.25rem;
+  min-width: 60%;
+  min-height: 3%;
+  border: 1px solid #38526b;
+  border-radius: 0.25rem;
+  opacity: 0.95;
+  color: black;
+}
+
+#submit {
+  margin: auto;
+  display: block;
+  min-width: 18%;
+  min-height: 3%;
+  padding: 0.75rem;
+  border-radius: 2px;
+  border-color: hsla(151, 88%, 37%, 0.767);
+  cursor: pointer;
+  box-sizing: content-box;
+  background-color: hsla(151, 88%, 37%, 0.767);
+}
+
+/* Enging of home section */
+
+/* beginning of features section */
+
+#features {
+  background-image: url("https://i.imgur.com/yGmZqgO.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+#features h1 {
+  align-self: center;
+  justify-self: center;
+  color: hsl(35, 100%, 55%);
+}
+
+#spics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#spics i {
+  margin: 0.5rem auto;
+  color: hsl(35, 100%, 55%);
+  font-size: 3rem;
+  justify-self: center;
+  grid-row: 1/2;
+}
+
+#spics h2 {
+  font-size: 2rem;
+  justify-self: center;
+  color: hsl(35, 100%, 55%);
+  grid-row: 2/3;
+}
+
+#spics p {
+  margin: 0.3rem 0.7rem;
+  grid-row: 3/4;
+}
+
+#design {
+  display: grid;
+  grid-column: 1/2;
+  grid-template-rows: 0.1fr 0.1fr 1fr;
+}
+
+#performance {
+  display: grid;
+  grid-column: 2/3;
+  grid-template-rows: 0.1fr 0.1fr 1fr;
+}
+
+#multitasking {
+  display: grid;
+  grid-column: 3/4;
+  grid-template-rows: 0.1fr 0.1fr 1fr;
+}
+
+/* Ending of features section */
+
+/* beginning of vid section */
+
+#vid {
+  background-color: hsl(0, 0%, 0%);
+  height: 95vh;
+  display: grid;
+  grid-template-rows: 10fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+#video {
+  grid-row: 1/2;
+  width: 80%;
+  height: 80%;
+}
+
+#footer {
+  background-color: hsla(0, 0%, 0%);
+  height: 5vh;
+  width: 100%;
+  display: flex;
+}
+
+#footer p {
+  align-self: center;
+  margin: 0 auto;
+}
+
+/* media queries */
+
+@media (max-width: 710px) {
+  .nav-link {
+    font-size: 1.2rem;
+    margin: 0rem 0.1rem;
+  }
+
+  #features {
+    height: 100%;
+    grid-template-rows: 0.3fr 2fr;
+  }
+
+  #features h1 {
+    font-size: 1.3rem;
+  }
+  #spics {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  #design {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    grid-template-rows: 0.1fr 0.1fr 1fr;
+    margin: 0 auto 2rem auto;
+  }
+
+  #design i {
+    grid-row: 1/2;
+  }
+
+  #design h2 {
+    grid-row: 2/3;
+  }
+
+  #design p {
+    grid-row: 3/4;
+  }
+
+  #performance {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    grid-template-rows: 0.1fr 0.1fr 0.5fr;
+    margin: 0 auto -30rem auto;
+  }
+
+  #performance i {
+    grid-row: 1/2;
+  }
+
+  #performance h2 {
+    grid-row: 2/3;
+  }
+
+  #performance p {
+    grid-row: 3/4;
+  }
+
+  #multitasking {
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    grid-template-rows: 0.1fr 0.1fr 0.5fr;
+    margin: 0 auto;
+  }
+
+  #multitasking i {
+    grid-row: 1/2;
+  }
+
+  #multitasking h2 {
+    grid-row: 2/3;
+  }
+
+  #multitasking p {
+    grid-row: 3/4;
+  }
+}
+
+@media (max-width: 620px) {
+  #features h1 {
+    font-size: 1rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    margin: 0rem 0.1rem;
+  }
+}
